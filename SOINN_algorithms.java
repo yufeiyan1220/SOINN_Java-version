@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-
+import java.util.Map.Entry;
 public class SOINN_algorithms {
 	private int data_dimension;
 	private ArrayList<Node> A_instance;
@@ -163,7 +163,8 @@ public class SOINN_algorithms {
 			
 		}
 	}
-		
+	
+	
 	protected min_distance winner_index(Node ksi){
 		int index1 = 0;
 		int index2 = 0;
@@ -261,6 +262,20 @@ public class SOINN_algorithms {
 		}
 		
 		output.close();
-			
+		
+		/*
+  		double[] a = {1,2};
+		double[] b = {3,4};
+		double[] c = {9,9};
+		Node node1 = new Node(a);
+		Node node2 = new Node(b);
+		Node node3 = new Node(c);
+		SOINN_algorithms A = new SOINN_algorithms(node1,node2);
+		System.out.println(A.thresholds);
+		System.out.println(A.getA_instance().get(1).acmlted_number);
+		System.out.println(A.winner_index(node3).dis+" "+A.winner_index(node3).index1);
+		A.SOINN_Learning(node3);
+		System.out.println(A.getA_instance().get(2).acmlted_number);
+		*/	
 	}
 }
